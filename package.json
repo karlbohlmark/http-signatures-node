@@ -1,0 +1,11 @@
+{
+  "name": "signatures",
+  "version": "0.0.1",
+  "description": "Http signatures draft 3 impl. Quick hack for testing a server implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karl Böhlmark <karl.bohlmark@gmail.com>",
+  "license": "ISC"
+}
