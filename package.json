@@ -1,6 +1,6 @@
 {
   "name": "signatures",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Http signatures draft 3 impl. Quick hack for testing a server implementation",
   "main": "index.js",
   "scripts": {
