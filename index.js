@@ -2,7 +2,7 @@ var crypto = require("crypto")
 
 module.exports = signature;
 
-function signature(keyId, keys, algorithm, headers) {
+function signature(keyId, key, algorithm, headers) {
     if (typeof headers != 'string') {
 	headers = headers.join(" ")
     }
@@ -25,7 +25,6 @@ function signature(keyId, keys, algorithm, headers) {
 	});
 	var toSign = headerStrings.join('\n');
 	var parts = algorithm.split('-');
-	var key = keys[keyId];
 	var keyBuffer = new Buffer(key, 'base64');
 	var hmac = crypto.createHmac(parts[1], keyBuffer);
 	hmac.update(toSign);
